@@ -2,7 +2,7 @@ steps:
 
 - id: "Copiando arquivos"
   name: 'https://hub.docker.com/r/rafaelcmd/greeting'
-  args: ['cp','main.go','.']
+  args: ['cp','/bin/greeting','.']
 
 - id: "Instalando Go"
   name: 'gcr.io/cloud-builders/go'
