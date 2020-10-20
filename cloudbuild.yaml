@@ -4,7 +4,6 @@ steps:
   name: 'gcr.io/cloud-builders/go'
   args: ['install','.']
   env: ['PROJECT_ROOT=greeting']
-  dir: '/go/src'
 
 - id: "Testando"
   name: 'gcr.io/cloud-builders/go'
