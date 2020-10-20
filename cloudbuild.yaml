@@ -3,12 +3,12 @@ steps:
 - id: "Instalando Go"
   name: 'gcr.io/cloud-builders/go'
   args: ['install','.']
-  env: ['PROJECT_ROOT=go']
+  env: ['PROJECT_ROOT=.']
 
 - id: "Testando"
   name: 'gcr.io/cloud-builders/go'
   args: ['test','main']
-  env: ['PROJECT_ROOT=go']
+  env: ['PROJECT_ROOT=.']
 
 - id: "Fazendo o build da imagem"
   name: 'gcr.io/cloud-builders/docker'
