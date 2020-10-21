@@ -7,7 +7,7 @@ steps:
 
 - id: "Testando"
   name: 'gcr.io/cloud-builders/go'
-  args: ['test','main']
+  args: ['test']
   env: ['PROJECT_ROOT=main']
 
 - id: "Fazendo o build da imagem"
